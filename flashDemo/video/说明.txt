@@ -1,0 +1,6 @@
+video.fla  导出视频avi     转成格式为flv的
+
+start.fla 控制flv视频
+
+如果还要修改video.fla最后只要导成名称为Video.flv的视屏就行
+在运行下start.fla 导出的swf即为所改后内容

@@ -1,0 +1,35 @@
+// file: hlsl.vsd
+// 
+
+float4x4 mWorldViewProj;  // World * View * Projection transformation
+float4x4 mWorldView;
+float lowest;
+float highest;
+float4 lightDir;
+float ambient;
+// Îí²ÎÊý
+
+float nearFog;
+float farFog;
+
+struct VS_OUTPUT{
+	float4 Pos: POSITION;
+	float4 Color: COLOR;
+	float3 Tex: TEXCOORD0;
+	float Fog: TEXCOORD1;
+};
+
+VS_OUTPUT main(float4 pos: POSITION, float2 tex: TEXCOORD0, float4 color: COLOR, float4 normal: NORMAL)
+{
+	VS_OUTPUT Out;
+	Out.Pos = mul(pos, mWorldViewProj);
+	float bright = dot(normal, normalize(lightDir)) + ambient;
+	Out.Color = color * bright;
+	Out.Tex.x = tex.x;
+	Out.Tex.y = tex.y;
+	Out.Tex.z = (pos.y - lowest)/(highest - lowest);
+	float4 posMulView = mul(pos, mWorldView);
+	float fogPara = (length(posMulView.xyz) - nearFog)/(farFog - nearFog);
+	Out.Fog = clamp(fogPara, 0.0f, 1.0f);
+	return Out;
+}

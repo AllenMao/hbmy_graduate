@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GameEngine - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\BLUESM~1\AppData\Local\Temp\RSP9C9B.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/GameEngine.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Studying Doc\游戏资料\游戏引擎\GameEngine\Background.cpp"
+"D:\Studying Doc\游戏资料\游戏引擎\GameEngine\Blues.cpp"
+"D:\Studying Doc\游戏资料\游戏引擎\GameEngine\GameEngine.cpp"
+"D:\Studying Doc\游戏资料\游戏引擎\GameEngine\MotorcycleSprite.cpp"
+"D:\Studying Doc\游戏资料\游戏引擎\GameEngine\ScrollingBackground.cpp"
+"D:\Studying Doc\游戏资料\游戏引擎\GameEngine\Sprite.cpp"
+]
+Creating command line "cl.exe @C:\Users\BLUESM~1\AppData\Local\Temp\RSP9C9B.tmp" 
+Creating temporary file "C:\Users\BLUESM~1\AppData\Local\Temp\RSP9C9C.tmp" with contents
+[
+msimg32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/GameEngine.pdb" /debug /machine:I386 /out:"Debug/GameEngine.exe" /pdbtype:sept 
+".\Debug\Background.obj"
+".\Debug\Bitmap.obj"
+".\Debug\Blues.obj"
+".\Debug\GameEngine.obj"
+".\Debug\MotorcycleSprite.obj"
+".\Debug\ScrollingBackground.obj"
+".\Debug\Sprite.obj"
+".\Debug\StuntJumper.res"
+]
+Creating command line "link.exe @C:\Users\BLUESM~1\AppData\Local\Temp\RSP9C9C.tmp"
+<h3>Output Window</h3>
+Compiling...
+ScrollingBackground.cpp
+Sprite.cpp
+Blues.cpp
+GameEngine.cpp
+MotorcycleSprite.cpp
+Skipping... (no relevant changes detected)
+Background.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/GameEngine.bsc"  ".\Debug\Background.sbr" ".\Debug\Bitmap.sbr" ".\Debug\Blues.sbr" ".\Debug\GameEngine.sbr" ".\Debug\MotorcycleSprite.sbr" ".\Debug\ScrollingBackground.sbr" ".\Debug\Sprite.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+GameEngine.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

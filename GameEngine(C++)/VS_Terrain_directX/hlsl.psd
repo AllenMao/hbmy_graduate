@@ -1,0 +1,17 @@
+//file: hlsl.psd
+
+sampler highTexSmpl;
+sampler lowTexSmpl;
+
+float4 fogColor;
+float bFog;  // 启用雾化,bFog = 1.0f; 不启用雾化,bFog = 0.0f
+
+float4 main(float3 tex: TEXCOORD0, float fogPara: TEXCOORD1, float4 color: COLOR): COLOR
+{
+	float2 texCoord = tex.xy;
+	float4 lowTexColor = tex2D(lowTexSmpl, texCoord);
+	float4 highTexColor= tex2D(highTexSmpl,texCoord);
+	float4 texColor = (highTexColor * tex.z + lowTexColor * (1 - tex.z)) * color;
+	fogPara = min(bFog, fogPara); // 如果不启用雾化,fogPara = 0
+	return lerp(texColor, fogColor, fogPara);
+}

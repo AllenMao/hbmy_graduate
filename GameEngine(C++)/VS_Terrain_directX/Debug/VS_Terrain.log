@@ -1,0 +1,38 @@
+﻿生成启动时间为 2016/8/20 9:11:51。
+     1>项目“D:\Code\DirectX\VS_Terrain\VS_Terrain.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\VS_Terrain.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         e:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Billboard.cpp CCamera.cpp CFrustum.cpp CImage.cpp CTerrain.cpp D3DApp.cpp D3DAudio.cpp PlantCollect.cpp SkyBox.cpp Timer.cpp WaterPlane.cpp main.cpp particles.cpp
+         particles.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         main.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         WaterPlane.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         Timer.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         SkyBox.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         PlantCollect.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         D3DAudio.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         D3DApp.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         CTerrain.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         CImage.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         CFrustum.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         CCamera.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         Billboard.cpp
+     1>d:\code\directx\vs_terrain\common.h(28): fatal error C1083: 无法打开包括文件:“D3DX9Math.h”: No such file or directory
+         正在生成代码...
+     1>已完成生成项目“D:\Code\DirectX\VS_Terrain\VS_Terrain.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:09.12
